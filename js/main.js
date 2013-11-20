@@ -3,6 +3,7 @@ require.config({
 	paths: {
 		map: "app/map",
 		options: "app/options",
+		rightPanel: 'app/right_panel',
 		async: "lib/async",
 		openlayers: "http://openlayers.org/api/OpenLayers",
 		gmap: "lib/google_map",
@@ -16,8 +17,6 @@ require.config({
 	}
 });
 
-var map;
 require(['map', 'options'], function(Map, Options){
-	map=Map.olmap;
-	
+	Map.init();
 });
