@@ -38,10 +38,24 @@ body {
 	color: white;
 }
 
-select {
+.categories {
 	font-size: 16px;
 	position: absolute;
 	left: 160px;
+	top: 10px;
+}
+
+.topics {
+	font-size: 16px;
+	position: absolute;
+	left: 360px;
+	top: 10px;
+}
+
+#header button {
+	font-size: 16px;
+	position: absolute;
+	left: 560px;
 	top: 10px;
 }
 

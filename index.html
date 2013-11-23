@@ -5,11 +5,12 @@
 </head>
 <body>
 	<div id="header" ng-controller="HeaderController">
-		<span>Options: {{name}}</span>
-		<select class="options">
-			<option value="simpleMap">simple map</option>
-			<option value="oneGrid">new one grid</option>
-		</select>
+		<form>
+			<span>Options: {{name}}</span>
+			<select class="categories" ng-model="category" ng-options="category.value for category in categories"></select>
+			<select class="topics" ng-model="topic" ng-options="topic.value for topic in topics"></select>
+			<button ng-click="query()">Query</button>
+		</form>
 	</div>
 	<div id="content">
 	  	<div id="map"></div>
