@@ -1,4 +1,4 @@
-define(['jquery', 'openlayers', 'rightPanel'], function($, OpenLayers, RightPanel){
+define(['jquery', 'openlayers', 'app/right_panel'], function($, OpenLayers, RightPanel){
 	
 	var map;
 	
@@ -17,11 +17,13 @@ define(['jquery', 'openlayers', 'rightPanel'], function($, OpenLayers, RightPane
 	    });
 	
 		map.addControls([mposition_control]);
+		
+		return map;
 	}
 	
 	function addGrid(){
 		var vector_layer = new OpenLayers.Layer.Vector("vector layer");
-  		map.addLayers([vector_layer]);
+	  		map.addLayers([vector_layer]);
 		
 		var linearring_geometry = new OpenLayers.Geometry.LinearRing([
 			new OpenLayers.Geometry.Point(12120060, 4059258),
@@ -48,9 +50,8 @@ define(['jquery', 'openlayers', 'rightPanel'], function($, OpenLayers, RightPane
 	
 		vector_layer.events.register('featureselected',this,handleFeatureSelected);
 	}
-
+	
 	return {
-		map: map,
 		init: initialize,
 		addGrid: addGrid
 	}

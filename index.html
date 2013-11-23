@@ -1,11 +1,11 @@
-<html>
+<html ng-app="geoApp">
 <head>
 	<link rel="stylesheet" href="css/all.css">
 	<script data-main="js/main.js" src="js/lib/require.js"></script>
 </head>
 <body>
-	<div id="header">
-		<span>Options: </span>
+	<div id="header" ng-controller="HeaderController">
+		<span>Options: {{name}}</span>
 		<select class="options">
 			<option value="simpleMap">simple map</option>
 			<option value="oneGrid">new one grid</option>
@@ -19,6 +19,8 @@
 		</div>
 	</div>
 	<div id="footer">
+
 	</div>
 </body>
+
 </html>

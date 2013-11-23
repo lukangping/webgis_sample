@@ -8833,10 +8833,6 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 	}
 }
 
-// If there is a window object, that at least has a document property,
-// define jQuery and $ identifiers
-if ( typeof window === "object" && typeof window.document === "object" ) {
-	window.jQuery = window.$ = jQuery;
-}
+
 
 })( window );

@@ -1,22 +1,27 @@
 require.config({
     baseUrl: 'js',
 	paths: {
-		map: "app/map",
-		options: "app/options",
-		rightPanel: 'app/right_panel',
 		async: "lib/async",
 		openlayers: "http://openlayers.org/api/OpenLayers",
 		gmap: "lib/google_map",
-		jquery: "lib/jquery"
+		jquery: "lib/jquery",
+		'angular': "lib/angular.min"
 	},
 	shim: {
-		openlayers: {
+		'openlayers': {
 			deps: ['gmap'],
 			exports: 'OpenLayers'
+		},
+		'angular': {
+			exports: 'angular'
 		}
 	}
 });
 
-require(['map', 'options'], function(Map, Options){
-	Map.init();
+require(['jquery', 'app/map', 'controllers/header_controller'], function($, Map){
+
+	$(function(){
+		Map.init();
+	});
+	
 });
