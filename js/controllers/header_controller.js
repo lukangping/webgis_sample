@@ -24,8 +24,8 @@ define(['app/geo_app'], function(geoApp){
 		});
 		
 		$scope.query=function(){
-			console.log(Map);
-			// Map.addGrid();
+			//调用service查询栅格，并通知上层处理器进行地图更新
+			$scope.$emit("NEW_QUERY",{});
 		}
 	});
 	

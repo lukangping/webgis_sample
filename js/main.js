@@ -18,9 +18,14 @@ require.config({
 	}
 });
 
-require(['jquery', 'app/map', 'controllers/header_controller'], function($, Map){
+require(['jquery', 'app/map', 'controllers/header_controller', 'directives/grid'], function($, Map){
 
 	$(function(){
+		
+		$("#header button").click(function(){
+		  Map.addGrid();
+		});
+		
 		Map.init();
 	});
 	
