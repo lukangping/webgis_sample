@@ -16,3 +16,4 @@ ThoughtWorks组建了一个10人的敏捷项目交付团队，借鉴精益软件
 
 http://leon-cartodb.gandalf.realestate.com.au/investor_selector.html
 http://leon-cartodb.gandalf.realestate.com.au/gmaps_utfgrid.html
+https://community.rea-group.com
