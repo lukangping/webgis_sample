@@ -12,3 +12,7 @@ REA（www.realestate.com.au）是澳洲第一的房产信息提供商，在世�
 敏捷引领与技术创新
 ThoughtWorks组建了一个10人的敏捷项目交付团队，借鉴精益软件的设计理念，将敏捷迭代和项目实施相结合，在项目初期识别出部分优质的用户群，通过前期客户测试以及后期用户反馈，不断调整业务方案和产品设计，通过持续交付快速完善产品功能，实现产品质量的稳步提升和用户数量的持续增长。
 平台主要采用AngularJS前端框架，完成高质量的MVC架构开发；运用Google Map V3 API提供丰富的用户交互方式；优化底层渲染算法实现多边形区域在地图上的快速展现；通过Responsive UI实现自适应的网页设计，满足不同终端用户的访问要求。同时，充分利用Amazon Web Service云服务，搭建持续集成的基础设施环境，极大地提高了开发、测试效率，最终实现快速迭代和产品持续发布。
+
+
+http://leon-cartodb.gandalf.realestate.com.au/investor_selector.html
+http://leon-cartodb.gandalf.realestate.com.au/gmaps_utfgrid.html
